@@ -4,10 +4,13 @@ fn bigger(a: i32, b: i32) -> i32 {
     // Do not use:
     // - another function call
     // - additional variables
+    if a > b {a} else {b}
 }
 
 fn main() {
     // You can optionally experiment here.
+    let ternary_result : i32 = if 5 > 9 {5} else {9};
+    println!("ternary_result: {}", ternary_result);
 }
 
 // Don't mind this for now :)
